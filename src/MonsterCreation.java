@@ -82,7 +82,7 @@ public class MonsterCreation {
         scanner.close();
     }
 
-    private static Monster createMonsters(Scanner scanner, String parent) {
+    private static Monster createMonster(Scanner scanner, String parent) {
 
         System.out.println("Eye color: ");
         String eyeColor = scanner.nextLine();
@@ -119,7 +119,7 @@ public class MonsterCreation {
         for(int i=1;i<=totalMonsters;i++) {
             System.out.println("\nEnter traits for Monster " + i + ":");
 
-            Monster monster = createMonsters(scanner, "Monster " + i);
+            Monster monster = createMonster(scanner, "Monster " + i);
             monsters.add(monster);
         }
         return monsters;
